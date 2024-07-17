@@ -9,7 +9,7 @@ const initUserState = {
 const initDashboardComponentsDataState = {
   one: {},
   comparisonData: [],
-  three: {},
+  scoreData: {},
   four: {},
   five: {},
   topProductsData: [],
