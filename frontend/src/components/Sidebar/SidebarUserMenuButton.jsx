@@ -22,8 +22,8 @@ const SidebarUserMenuButton = () => {
       >
         <Avatar
           size={"sm"}
-          name="Ahmad"
-          src="https://avatars2.githubusercontent.com/u/37842853?v=4"
+          name="Test User"
+          src="test-user"
         />
       </MenuButton>
       <MenuList fontSize={17} zIndex={5555}>

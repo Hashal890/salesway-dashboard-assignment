@@ -24,10 +24,11 @@ const Sidebar = () => {
       flexDir={["column", "column", "row"]}
     >
       <Flex
-        // pos="sticky"
+        pos="sticky"
         left="0"
         top="0"
         w="60"
+        h={"100vh"}
         bg={useColorModeValue("white", "gray.800")}
         borderRightWidth="1px"
         borderColor={useColorModeValue("inherit", "gray.700")}
