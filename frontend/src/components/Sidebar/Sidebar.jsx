@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Flex,
@@ -18,12 +19,14 @@ const Sidebar = () => {
   const { isOpen, onClose, onToggle } = useDisclosure();
 
   return (
-    <Flex bg={useColorModeValue("gray.50", "gray.700")} minH="100vh">
+    <Flex
+      bg={useColorModeValue("gray.50", "gray.700")}
+      flexDir={["column", "column", "row"]}
+    >
       <Flex
-        pos="sticky"
+        // pos="sticky"
         left="0"
         top="0"
-        h="100vh"
         w="60"
         bg={useColorModeValue("white", "gray.800")}
         borderRightWidth="1px"
@@ -31,7 +34,7 @@ const Sidebar = () => {
         flexDirection="column"
         justifyContent="space-between"
         alignItems="stretch"
-        display={{ base: isOpen ? "none" : "flex", md: "flex" }}
+        display={{ base: "none", md: "flex" }}
       >
         <Flex px="4" py="5" align="center">
           <Icon as={RiFlashlightFill} h={8} w={8} />
@@ -77,7 +80,6 @@ const Sidebar = () => {
         p={4}
         minH="30rem"
         bg={useColorModeValue("white", "gray.800")}
-        ml={{ base: 0, md: isOpen ? "60" : "0" }}
         transition=".3s ease"
       >
         <Dashboard />

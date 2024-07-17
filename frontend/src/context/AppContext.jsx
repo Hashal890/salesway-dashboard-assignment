@@ -6,17 +6,42 @@ const initUserState = {
   password: "",
 };
 
+const initDashboardComponentsDataState = {
+  one: {},
+  two: {},
+  three: {},
+  four: {},
+  five: {},
+  six: {},
+};
+
 export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
   const [userState, setUserState] = useState(initUserState);
+  const [dashboardComponentsDataState, setDashboardComponentsDataState] =
+    useState(initDashboardComponentsDataState);
 
   const updateUserState = (newState) => {
     setUserState(newState);
   };
 
+  const updateDashboardComponentsDataState = (newData) => {
+    setDashboardComponentsDataState((prevState) => ({
+      ...prevState,
+      ...newData,
+    }));
+  };
+
   return (
-    <AppContext.Provider value={{ userState, updateUserState }}>
+    <AppContext.Provider
+      value={{
+        userState,
+        updateUserState,
+        dashboardComponentsDataState,
+        updateDashboardComponentsDataState,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

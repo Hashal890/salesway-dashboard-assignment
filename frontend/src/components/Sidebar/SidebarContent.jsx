@@ -56,33 +56,22 @@ const SidebarContent = () => (
           color="gray.600"
           aria-label="Main Navigation"
         >
-          {SidebarItems.map((item) => {
-            const { id, icon, title } = item;
-            return <NavbarItem key={id} icon={icon} title={title} />;
-          })}
+          {SidebarItems.map((item) => (
+            <NavbarItem key={item.id} icon={item.icon} title={item.title} />
+          ))}
         </Flex>
       </Box>
-      <Flex
-        px="4"
-        py="5"
-        mt={10}
-        justifyContent={"center"}
-        alignItems={"center"}
-      >
+      <Flex px="4" py="5" justifyContent="center" alignItems="center">
         <Menu>
           <MenuButton
             as={Button}
-            size={"sm"}
-            rounded={"full"}
-            variant={"link"}
-            cursor={"pointer"}
+            size="sm"
+            rounded="full"
+            variant="link"
+            cursor="pointer"
             _hover={{ textDecoration: "none" }}
           >
-            <Avatar
-              size={"sm"}
-              name="Ahmad"
-              src="https://avatars2.githubusercontent.com/u/37842853?v=4"
-            />
+            <Avatar size="sm" name="test-account" src="test-account" />
           </MenuButton>
           <MenuList fontSize={17} zIndex={5555}>
             <MenuItem as={Box} href="#">
