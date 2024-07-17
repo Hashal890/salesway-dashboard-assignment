@@ -27,7 +27,7 @@ const ComponentOne = () => {
         console.log(err);
         setLoading(false);
       });
-  }, [updateDashboardComponentsDataState]);
+  }, []);
 
   return (
     <Box>
@@ -48,6 +48,7 @@ const ComponentOne = () => {
             size={"sm"}
             cursor={"pointer"}
             borderRadius={"20px"}
+            defaultValue={"last-year"}
           >
             <option value="last-year">Last year</option>
             <option value="last-month">Last month</option>

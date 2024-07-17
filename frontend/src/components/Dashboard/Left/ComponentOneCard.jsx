@@ -10,10 +10,15 @@ const ComponentOneCard = ({ title, value }) => {
       borderRadius={"14px"}
       cursor={"pointer"}
     >
-      <Text textTransform={"capitalize"} fontSize={"16px"} fontWeight={600}>
+      <Text
+        textTransform={"capitalize"}
+        fontSize={"14px"}
+        fontWeight={600}
+        color={"gray"}
+      >
         {title}
       </Text>
-      <Text fontSize={"14px"} color={"grey"} fontWeight={600}>
+      <Text fontSize={"18px"} color={"black"} fontWeight={600}>
         {value}
       </Text>
     </Box>

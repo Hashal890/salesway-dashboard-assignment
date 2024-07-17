@@ -10,7 +10,7 @@ const App = () => {
   // return <Box>{userState.isLoggedIn ? <Dashboard /> : <Login />}</Box>;
 
   return (
-    <Box>
+    <Box fontFamily={"Poppins, sans-serif"}>
       <Sidebar />
     </Box>
   );

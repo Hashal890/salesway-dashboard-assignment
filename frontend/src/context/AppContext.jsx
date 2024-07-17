@@ -8,11 +8,11 @@ const initUserState = {
 
 const initDashboardComponentsDataState = {
   one: {},
-  two: {},
+  comparisonData: [],
   three: {},
   four: {},
   five: {},
-  six: {},
+  topProductsData: [],
 };
 
 export const AppContext = createContext();
