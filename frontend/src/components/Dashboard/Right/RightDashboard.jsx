@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import ComponentThree from "./score/ComponentThree";
+import ComponentFour from "./device/ComponentFour";
 
 const RightDashboard = () => {
   return (
@@ -11,6 +12,7 @@ const RightDashboard = () => {
       ml={4}
     >
       <ComponentThree />
+      <ComponentFour />
     </Box>
   );
 };

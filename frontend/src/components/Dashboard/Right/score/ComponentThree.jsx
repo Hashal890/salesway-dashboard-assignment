@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Box, Button, Flex, Progress, Spinner, Text } from "@chakra-ui/react";
 import axios from "axios";
 import { AppContext } from "../../../../context/AppContext";
+import HeadingForDashboardComponents from "../../../common/Heading";
 
 const ComponentThree = () => {
   const { dashboardComponentsDataState, updateDashboardComponentsDataState } =
@@ -63,26 +64,24 @@ const ComponentThree = () => {
               of 100 points
             </Text>
             <Box mt={4}>
-              <Text textAlign={"center"} fontWeight={600} fontSize={"24px"}>
-                {dashboardComponentsDataState.scoreData.title}
-              </Text>
-              <Text textAlign={"center"} fontSize={"12px"}>
+              <HeadingForDashboardComponents
+                title={dashboardComponentsDataState.scoreData.title}
+              />
+              <Text fontSize={"12px"}>
                 {dashboardComponentsDataState.scoreData.message}
               </Text>
             </Box>
-            <Flex justifyContent={"center"} alignItems={"center"}>
-              <Button
-                mt={4}
-                bg={"transparent"}
-                _hover={{ bg: "transparent" }}
-                border={"1px solid grey"}
-                p={2}
-                borderRadius={"20px"}
-                fontSize={"12px"}
-              >
-                Improve your score
-              </Button>
-            </Flex>
+            <Button
+              mt={4}
+              bg={"transparent"}
+              _hover={{ bg: "transparent" }}
+              border={"1px solid grey"}
+              p={2}
+              borderRadius={"20px"}
+              fontSize={"12px"}
+            >
+              Improve your score
+            </Button>
           </>
         )
       )}
