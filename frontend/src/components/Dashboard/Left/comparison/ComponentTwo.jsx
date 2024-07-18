@@ -12,7 +12,7 @@ const ComponentTwo = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/comparison")
+      .get("https://salesway-dashboard-assignment.onrender.com/comparison")
       .then((res) => {
         updateDashboardComponentsDataState({
           comparisonData: res.data.comparisonData,

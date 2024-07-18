@@ -20,7 +20,7 @@ const TopProductsTable = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/top-products")
+      .get("https://salesway-dashboard-assignment.onrender.com/top-products")
       .then((res) => {
         updateDashboardComponentsDataState({
           topProductsData: res.data.topProductsData,
