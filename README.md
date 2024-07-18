@@ -1,9 +1,23 @@
 # Salesway Dashboard Assignment
 
+Welcome to the Salesway Dashboard, a comprehensive tool designed for visualizing and managing sales data effectively. This dashboard offers a seamless user experience with various features to enhance data visualization and analysis, while ensuring secure access and robust error handling.
+
 ## Features:
 
-- Front-End
-- Back-End
+- Bar Graphs for Data Visualization: Interactive bar graphs to visualize sales data, making it easy to identify trends and patterns.
+- Progress Bars: Provides visual indicators of progress towards sales targets and other key metrics.
+- Error Handling in UI: Robust error handling to ensure smooth user experience, with clear messages and fallback options in case of any issues.
+- Backend API for Data Storing: A fully-featured backend API to handle data storage, retrieval, and management, ensuring data persistence and integrity.
+
+## Project Demonstration
+
+**Image Preview:**
+
+![home](./frontend/src/assets/gif-preview.gif)
+
+**Video Overview:**
+
+[View Video](https://drive.google.com/file/d/1gbW4YTA8xGN3t534vM_oF4bJPZUp1mK5/view?usp=sharing)
 
 ## Getting Started
 
@@ -32,13 +46,13 @@ bun install
 Run the development server:
 
 ```bash
-npm run dev
+npm run start
 # or
-yarn dev
+yarn start
 # or
-pnpm dev
+pnpm start
 # or
-bun dev
+bun start
 ```
 
 ### Back-End Setup
@@ -85,13 +99,3 @@ bun dev
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [Vercel](https://vercel.com/)
-
-## Project Demonstration
-
-**Image Preview:**
-
-![home](./frontend/src/assets/)
-
-**Video Overview:**
-
-[View Video]()
