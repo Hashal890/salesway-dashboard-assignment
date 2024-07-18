@@ -10,8 +10,8 @@ const initDashboardComponentsDataState = {
   one: {},
   comparisonData: [],
   scoreData: {},
-  four: {},
-  five: {},
+  device: {},
+  feedback: {},
   topProductsData: [],
 };
 

@@ -4,7 +4,7 @@ import HeadingForDashboardComponents from "../../../common/Heading";
 
 const ComponentFour = () => {
   return (
-    <Box>
+    <Box p={4} pb={6} borderBottom={"1px dotted grey"} m={2} x>
       <HeadingForDashboardComponents title={"Customers by device"} />
     </Box>
   );
